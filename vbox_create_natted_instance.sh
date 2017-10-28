@@ -13,7 +13,7 @@ virtualbox_home='/Users/hme/VirtualBox VMs'
 vm_name=$1
 #Default value to PuppetNetwork, if nothing specified
 nat_network=${2:-PuppetNetwork}
-base_multiattach_hdd="base_hdd_nat.vdi"
+base_multiattach_hdd="base_box_nat_dns_puppet.vdi"
 OS="Ubuntu_64"
 
 VBoxManage createvm --name $vm_name --ostype $OS --register
